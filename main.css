@@ -1,0 +1,82 @@
+
+.container {
+  width: 360px;
+  height: 320px;
+  /* 電卓が浮き出るように影を付ける */
+  border: solid 10px #C0C0C0;
+  border-right: solid 10px #C0C0C0;
+  border-bottom: solid 10px #C0C0C0;
+  border-radius: 10px;
+  /* インライン要素を中央に配置 */
+  text-align: center;
+  /* 余白調整 */
+  padding: 8px;
+  margin: 20px;
+}
+
+/*ディスプレイ部分*/
+.output {
+  width: 360px;
+  height: 45px;
+  line-height: 50px;
+  font-size: x-large;
+  color: #FFFFFF;
+  /*文字を右詰めに*/
+  text-align: right;
+  padding: 5px;
+  margin-bottom: 5px;
+  /*枠線*/
+  border:2px solid black;
+  box-sizing: border-box;
+  display:none;
+  /*見た目の詳細*/
+  background: #000000;
+  border-top: none #dcdcdca4 5px;
+  border-bottom: none #dcdcdca4 5px;
+  border-right: none #b6b6b6 6px;
+  border-left: none #b6b6b6 6px;
+  border-radius: 0px;
+}
+
+/*ディスプレイ表示*/
+.output.active {
+  display:block;
+}
+
+/*ボタン外枠部分*/
+.input {
+  width:360px;
+}
+
+/*ボタン内枠部分*/
+.row {
+  display: flex;
+  justify-content: space-between;
+  border: 2px;
+  width: 360px;
+}
+
+
+
+.num_bth, #clear, #equal_btn{
+  /*ボタンのサイズ*/
+  width: 100px;
+  height: 40px;
+  font-size: x-large;
+  /* 数字部分の背景色 */
+  background-color: #dcdcdca4;
+   /* ボタンの詳細設定 */
+  border: none ;
+  border-radius: 10px;
+  border-color: #008BBB	;
+  /* クリック時の黒枠を消す */
+  outline: none;
+  text-align:center;
+  cursor: pointer;
+  margin: 5px;
+  border: solid 1px #222222;
+}
+
+#clear, #equal_btn {
+  width: 185px;
+}
